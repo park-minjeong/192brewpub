@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&family=Noto+Serif:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    min-width: 1400px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*******header********************************/
+#header{
+    margin: 0 auto;
+    position: relative;
+}
+#header>p>img{
+    width: 100%;
+}
+#header_inner{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav{
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+.list1, .list2{
+    display: flex;
+}
+.list2 li{
+    padding-left: 17px;
+    font-size: 14px;
+}
+.list1 li{
+    padding: 0 30px;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+}
+.list1{
+    margin-right: 245px;
+}
+.nav p a img{
+    display: block;
+}
+.list1 li a{
+    transition: 0.3s;
+}
+   .list1 li a:hover { 
+    text-shadow: 0 0 .1em, 0 0 .3em; 
+}
+
+/************event****************************/
+#event{
+    width: 1230px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 5px 0 20px;
+}
+.sub_title{
+    padding-bottom: 130px;
+    font-size: 18px;
+}
+#event h3{
+    color: #595a59;
+    border-bottom: 2px solid #595a59;
+    padding-bottom: 5px;
+    margin-bottom: 60px;
+}
+.event_box{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 150px;
+}
+#event dl{
+    border:1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#event dt{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.text{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.plus_btn{
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+/*****************notice*******************/
+#notice{
+    width: 1230px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.notice1{
+    border-top: 2px solid #595a59;
+    border-bottom: 2px solid #595a59;
+    padding: 50px 0 30px;
+    width: 460px;
+}
+.n_title{
+    font-size: 21px;
+    font-weight: bold;
+}
+.n_text{
+    padding: 30px 0 50px;
+    width: 433px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice_box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+/*****************footer********************/
+#footer{
+    background-color: #617e75;
+    margin-top: 20px;
+}
+#footer_inner{
+    width: 1230px;
+    margin: 0 auto;
+    color: #d1c9ac;
+    font-weight: bold;
+    padding: 50px 0;
+}
+.f1 li a img img{
+    display: block;
+} 
+.f1{
+    display: flex;
+    align-items: center;
+}
+.f2{
+    display: flex;
+}
+.f3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.f1 li{
+    padding: 0 59px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+.f1 li:nth-child(5){
+   padding-left: 254px;
+}
+.f1_sub{
+    display: flex;
+    float: right;
+    margin-right: 47px;
+}
+.f1_sub li{
+    margin-right: 12px;
+    margin-top: 5px;
+}
+.f2 li{
+    padding-right: 8px;
+}
+.f_box{
+    padding-top: 90px;
+    padding-left: 280px;
+}
+.f_padding{
+    padding: 5px 0;
+}
+.bg{
+    transition:all 0.5s;
+    background:#e2b1a0;
+    border-radius: 50%;
+    height: 36px;
+}
+.bg:hover{
+    transform:translateY(-5px);
+    box-shadow:5px 5px 10px rgba(226,177,160,0.3)
+}
+.bg a{
+    display: inline-block;
+}
+/****************top**********************/
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+}
+.top{
+    transition:all 0.5s;
+    background:#e2b1a0;
+    border-radius: 50%;
+    height: 57px;
+}
+.top:hover{
+    transform:translateY(-5px);
+    box-shadow:5px 5px 10px rgba(0,0,0,0.3)
+}
